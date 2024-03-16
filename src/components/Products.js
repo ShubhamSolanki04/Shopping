@@ -37,12 +37,16 @@ const Products = ({ items, cart, setCart }) => {
                 pauseOnHover
                 theme="dark"/>
             <div className='container mt-5'>
-                <div className='row'>
+                <div className='row' style={{
+                    display:'flex',
+                    justifyContent:'center',
+                    alignItems:'center'
+                }}>
                     {
                         items.map((x) => {
                             return (
                                 <>
-                                    <div key={x.id} className='col-lg-4 col-md-6 mt-3 text-center'>
+                                    <div key={x.id} className='col-lg-4 col-md-6 col-sm-12 mt-3 text-center prod'>
                                         <div className="card" style={{ width: "18rem" }}>
                                             <Link to={`/product/${x.id}`} style={{
                                                 display: 'flex',
