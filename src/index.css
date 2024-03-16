@@ -58,7 +58,7 @@
   gap: 4rem;
 }
 
-@media (max-width:425px){
+@media (max-width:445px){
   .items{
     font-size: xx-small;
   }
