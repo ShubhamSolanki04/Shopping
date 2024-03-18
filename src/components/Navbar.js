@@ -17,7 +17,7 @@ const Navbar = ({ setData, cart }) => {
   }
 
   const filterByPrice = (price) => {
-    const element = items.filter((x) => x.price >= price)
+    const element = items.filter((x) => x.price <= price)
     setData(element)
   }
 
@@ -51,10 +51,10 @@ const Navbar = ({ setData, cart }) => {
             <div onClick={() => filterByCategory('mobiles')} className='items'>Mobiles</div>
             <div onClick={() => filterByCategory('laptops')} className='items'>Laptop</div>
             <div onClick={() => filterByCategory('tablets')} className='items'>Tablets</div>
-            <div onClick={() => filterByPrice(30000)} className='items'>30000</div>
-            <div onClick={() => filterByPrice(50000)} className='items'>50000</div>
-            <div onClick={() => filterByPrice(70000)} className='items'>70000</div>
-            <div onClick={() => filterByPrice(90000)} className='items'>90000</div>
+            <div onClick={() => filterByPrice(30000)} className='items'>U-30000</div>
+            <div onClick={() => filterByPrice(50000)} className='items'>U-50000</div>
+            <div onClick={() => filterByPrice(90000)} className='items'>U-90000</div>
+            <div onClick={() => filterByPrice(70000)} className='items'>U-70000</div>
           </div>
         )
       }
